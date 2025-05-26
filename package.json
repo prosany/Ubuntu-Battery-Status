@@ -1,0 +1,20 @@
+{
+  "name": "ubuntu-battery-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node": "node index.js",
+    "dev": "npx nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.1",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "ioredis": "^5.6.1",
+    "moment": "^2.30.1"
+  }
+}
