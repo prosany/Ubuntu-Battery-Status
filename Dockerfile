@@ -16,7 +16,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install only production dependencies
-RUN pnpm install --omit=dev
+RUN pnpm install
 
 # Copy the rest of the code
 COPY . .
