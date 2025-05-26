@@ -22,9 +22,10 @@ const redisClient = new IORedis({
 // Helper to read battery info
 const getBatteryInfo = async () => {
   try {
-    const output = execSync('upower -i $(upower -e | grep battery)', {
-      encoding: 'utf-8',
-    });
+    const output = execSync(
+      'upower -i /org/freedesktop/UPower/devices/battery_BAT1',
+      { encoding: 'utf-8' }
+    );
     const percentageMatch = output.match(/percentage:\s+(\d+)%/);
     const stateMatch = output.match(/state:\s+(\w+)/);
 
