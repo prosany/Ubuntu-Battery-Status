@@ -21,8 +21,5 @@ RUN pnpm install
 # Copy the rest of the code
 COPY . .
 
-# Expose the port the app runs on
-EXPOSE 1211
-
 # Run the monitor
 CMD ["node", "index.js"]
